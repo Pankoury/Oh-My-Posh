@@ -2,6 +2,6 @@
 
 
 clear
-oh-my-posh init pwsh --config 'C:\Users\Tanvir\AppData\Local\Programs\oh-my-posh\themes\Tanvir_bubblesextra.omp.json' | Invoke-Expression
+oh-my-posh init pwsh --config 'C:\Users\Tanvir\AppData\Local\Programs\oh-my-posh\themes\Tanvir1.omp.json' | Invoke-Expression
 
 set-PSReadLineOption -PredictionViewStyle ListView
