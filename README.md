@@ -7,36 +7,41 @@
 
 
 # Installing Oh-My-Posh
+	# Checking "winget":
 	1. Open "Terminal" as Administrator.
 	2. Check 'winget' is installed or not by typing "winget" in the terminal.
 		-if not showing "winget", download and install "app installer" from windows store.
 
-	# Another Title:
+	# Installing Oh-My-Posh:
 	3. Follow instruction on this site [ https://ohmyposh.dev/docs/installation/windows ] to get oh-my-posh theme.
 	4. OR Type bellow command  using run as administrator.
 		- winget install JanDeDobbeleer.OhMyPosh -s winget
 
+	# Downloading Custom files from github account:
 	5. Download custom files from [ https://github.com/Pankoury/Oh-My-Posh/tree/main ]
 	6. Download custom themes and paste to bellow directory.
 		-'C:\Users\\***(user)\AppData\Local\Programs\oh-my-posh\themes'
 
+	# Installing PSReadLine:
 	7. Installing PSReadLine, [to get instruction go to [https://github.com/PowerShell/PSReadLine]]
 	8. Or type bellow commands step by step.
 		- Install-Module -Name PowerShellGet -Force
 		- Install-Module PSReadLine
+		- Import-Module PSReadLine
 
 	9. If [PSReadLine v 2.0.0 ] already installed then follow bellow instruction-
 		- Uninstall-Module PSReadLine  [to uninstall previous version first.]
 		- Install-Module PSReadLine -Force
 		- Import-Module PSReadLine
 
+	# Setting notepad $profile:
 	10. Type bellow command in cmd to set notepad profile, sothat every time terminal starts it starts with custom theme.
 		- notepad $profile
 	11. If shows error, then 1st type bellow command and then again above code. (for help go to [https://ohmyposh.dev/docs/installation/prompt])
 		- New-Item -Path $PROFILE -Type File -Force
-	12. Copy notepad file content (from github account) and paste it to "notepad $profile".
+	12. Copy [notepad $profile] content (from github account) and paste it to notepad file.
 
-
+	# Setting fonts:
 	13. Install 'FiraCode' and "Meslo" Font from this site [https://github.com/ryanoasis/nerd-fonts/releases/tag/v3.0.2]
     14. and set it in "Defaults > Appearance> Fonts face>"MesloLGM Nerd font"
 
